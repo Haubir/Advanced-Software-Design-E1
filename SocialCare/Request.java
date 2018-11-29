@@ -1,16 +1,16 @@
 package SocialCare;
 
-public class Request {
+public class Request implements Constraints {
 
     public Request() {
 
     }
 
-    public getRequest() {
-
+    public String getRequest() { // Replace String with the desired type.
+        return "";
     }
 
-    public setRequest() {
+    public void setRequest() {
 
     }
 
