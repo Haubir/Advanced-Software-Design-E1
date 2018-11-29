@@ -34,5 +34,8 @@ public class Requester {
         this.phoneNumber = phoneNumber;
     }
 
+    public void pay(PaymentSystem paymentSystem) {
+	paymentSystem.makePayment(this);
+    }
 
 }
