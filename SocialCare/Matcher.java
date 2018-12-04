@@ -6,11 +6,21 @@ public class Matcher {
 
     }
 
-    public void notifyRequester(Requester toNotify) {
+    public getPreferences() {
 
     }
 
-    public void notifyResponder(Responder toNotify) {
+    public getFeedback(){
 
     }
+
+    public sendMatch() {
+
+    }
+
+    public getRespons() {
+
+    }
+
+
 }

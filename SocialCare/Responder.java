@@ -1,6 +1,6 @@
 package SocialCare;
 
-public class Responder {
+public class Responder implements Person{
     private String name;
     private String email;
     private String phonenumber;

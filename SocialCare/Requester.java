@@ -1,7 +1,7 @@
 package SocialCare;
 
 
-public class Requester {
+public class Requester implements Person {
     private String name;
     private String email;
     private String phoneNumber;
@@ -36,6 +36,10 @@ public class Requester {
 
     public void pay(PaymentSystem paymentSystem) {
 	paymentSystem.makePayment(this);
+    }
+
+    public void giveFeedback() {
+
     }
 
 }
