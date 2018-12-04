@@ -1,7 +1,7 @@
 package SocialCare;
 
 public class Tracker {
-    private T trackingObject; // Could be either Request or Matcher
+    private TrackingObject trackingObject; // Could be either Request or Matcher
 
 
     public Tracker() {

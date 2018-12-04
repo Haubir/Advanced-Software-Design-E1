@@ -1,25 +1,25 @@
 package SocialCare;
 
-public class Matcher {
+public class Matcher implements TrackingObject {
 
-    public performMatch() {
-
-    }
-
-    public getPreferences() {
+    public void performMatch() {
 
     }
 
-    public getFeedback(){
-
+    public Preference getPreference() {
+        return null;
     }
 
-    public sendMatch(Notifier notifier, Person recipient) {
+    public Feedback getFeedback(){
+        return null;
+    }
+
+    public void sendMatch(Notifier notifier, Person recipient) {
         notifier.notify();
     }
 
-    public getRespons() {
-
+    public Response getResponse() {
+        return null;
     }
 
 

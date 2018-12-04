@@ -1,18 +1,18 @@
 package SocialCare;
 
-import java.util.*;
+import java.util.ArrayList;
 
 public class Logger {
     private Requester requester;
     private Responder responder;
-    private Timestamp timestamp;
-    private ArrayList<> decisions;
+    private String timestamp;
+    private ArrayList<String> decisions; // String type should probably be changed to a more suitable type
 
     public Logger() {
 
     }
 
-    public Logger(Requester requester, Responder responder, Timestamp timestamp, ArrayList<> decisions) {
+    public Logger(Requester requester, Responder responder, String timestamp, ArrayList<String> decisions) {
         this.requester = requester;
         this.responder = responder;
         this.timestamp = timestamp;
@@ -35,19 +35,19 @@ public class Logger {
         this.responder = responder;
     }
 
-    public Timestamp getTimestamp() {
+    public String getTimestamp() {
         return timestamp;
     }
 
-    public void setTimestamp(Timestamp timestamp) {
+    public void setTimestamp(String timestamp) {
         this.timestamp = timestamp;
     }
 
-    public ArrayList<> getDecisions() {
+    public ArrayList<String> getDecisions() {
         return decisions;
     }
 
-    public void setDecisions(ArrayList<> decisions) {
+    public void setDecisions(ArrayList<String> decisions) {
         this.decisions = decisions;
     }
 }

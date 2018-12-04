@@ -1,40 +1,25 @@
 package SocialCare;
 
-public interface Person {
-    private String name;
-    private String email;
-    private String phoneNumber;
-    private int starRating; // average
+public abstract class Person {
+    protected String name;
+    protected String email;
+    protected String phoneNumber;
+    protected int starRating; // average
 
 
-    public String getName() {
-        return name;
-    }
+    abstract String getName();
 
-    public void setName(String name) {
-        this.name = name;
-    }
+    abstract void setName(String name);
 
-    public String getEmail() {
-        return email;
-    }
+    abstract String getEmail();
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
+    abstract void setEmail(String email);
 
-    public String getPhoneNumber() {
-        return phoneNumber;
-    }
+    abstract String getPhoneNumber();
 
-    public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
-    }
+    abstract void setPhoneNumber(String phoneNumber);
 
-    public void giveFeedback() {
+    abstract void giveFeedback(Responder responder);
 
-    }
-
-
-
+    abstract void giveFeedback(Request request);
 }

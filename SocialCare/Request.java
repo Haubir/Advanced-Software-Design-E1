@@ -1,6 +1,7 @@
 package SocialCare;
 
-public class Request implements Constraints {
+
+public class Request extends Constraints implements TrackingObject{
 	private int ID;
 	private String status; 
 
@@ -26,16 +27,15 @@ public class Request implements Constraints {
     }
 
     private Boolean validStatus(String status) {
-        ret = false;
+        Boolean ret = false;
 
-        switch(status.toLower()) {
-            case "scheduled":
-            case "pending": // When waiting for a match
-            case "matched":
-            case "finished":
-            case "aborted":
-                ret = true;
-                break;
+        if (status.toLowerCase().equals("scheduled")    ||
+            status.toLowerCase().equals("pending")      ||
+            status.toLowerCase().equals("matched")      ||
+            status.toLowerCase().equals("finished")     ||
+            status.toLowerCase().equals("aborted")) {
+            // If this part of the code is reached, the input was valid.
+            ret = true;
         }
 
         return ret;
@@ -49,4 +49,23 @@ public class Request implements Constraints {
         this.ID = ID;
     }
 
+    @Override
+    public String getTime() {
+        return this.time;
+    }
+
+    @Override
+    public int getNumberOfResponders() {
+        return this.numberOfResponders;
+    }
+
+    @Override
+    public void setTime(String time) {
+        this.time = time;
+    }
+
+    @Override
+    public void setNumberOfResponders(int numberOfResponders) {
+        this.numberOfResponders = numberOfResponders;
+    }
 }

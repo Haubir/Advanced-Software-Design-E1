@@ -3,7 +3,7 @@ package SocialCare;
 import java.util.HashMap;
 
 public class Scheduler {
-	private HashMap<ID,Request> queue;
+	private HashMap<Integer,Request> queue;
 
     public Scheduler() {
 
@@ -14,8 +14,11 @@ public class Scheduler {
     }
 
     public void post() {
-        // 1. send to matcher
-        Request toPost = this.queue.top();
+        // 1. Fetch the Request
+        Request toPost = this.queue.get(0); // TODO: This line should always return the first Request in the HashMap.
+        // 2. Send to the matcher
+        // TODO
+        // 3. Change status to "Pending"
         toPost.setStatus("Posted");
     }
 
