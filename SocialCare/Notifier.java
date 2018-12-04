@@ -16,12 +16,4 @@ public class Notifier {
     public void notify(String notification, Person recipient) {
 
     }
-
-    public void notify() {
-
-    }
-
-    public void notify() {
-
-    }
 }
