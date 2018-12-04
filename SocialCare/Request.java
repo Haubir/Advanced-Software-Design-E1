@@ -1,6 +1,8 @@
 package SocialCare;
 
 public class Request implements Constraints {
+	private int ID;
+	private String status; 
 
     public Request() {
 
