@@ -7,25 +7,25 @@ public class Preference {
     private long time;
 
     public Preference(int age, String gender, int duration, long time) {
-	this.age = age;
-	this.gender = gender;
-	this.duration = duration;
-	this.time = time;
+        this.age = age;
+        this.gender = gender;
+        this.duration = duration;
+        this.time = time;
     }
 
     public int getAge() {
-	return this.age;
+	    return this.age;
     }
 
     public String getGender() {
-	return this.gender;
+	    return this.gender;
     }
 
     public int getDuration() {
-	return this.duration;
+	    return this.duration;
     }
 
     public long getTime() {
-	return this.time;
+	    return this.time;
     }
 }
