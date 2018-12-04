@@ -1,9 +1,7 @@
 package SocialCare;
 
-public class Responder implements Person{
-    private String name;
-    private String email;
-    private String phonenumber;
+public class Responder implements Person {
+    private String skills;
 
     public Responder() {
     }
@@ -15,27 +13,9 @@ public class Responder implements Person{
         this.phonenumber = phonenumber;
     }
 
-    public String getName() {
-        return name;
+    @Override
+    public void giveFeedback(Request request) {
+
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getPhonenumber() {
-        return phonenumber;
-    }
-
-    public void setPhonenumber(String phonenumber) {
-        this.phonenumber = phonenumber;
-    }
 }

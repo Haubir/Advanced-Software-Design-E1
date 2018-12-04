@@ -14,8 +14,8 @@ public class Matcher {
 
     }
 
-    public sendMatch() {
-
+    public sendMatch(Notifier notifier, Person recipient) {
+        notifier.notify();
     }
 
     public getRespons() {
