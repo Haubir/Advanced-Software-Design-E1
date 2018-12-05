@@ -3,6 +3,7 @@ package SocialCare;
 import java.util.ArrayList;
 
 public class Logger {
+    private Request request;
     private Requester requester;
     private Responder responder;
     private String timestamp;
@@ -12,7 +13,8 @@ public class Logger {
 
     }
 
-    public Logger(Requester requester, Responder responder, String timestamp, ArrayList<String> decisions) {
+    public Logger(Request request, Requester requester, Responder responder, String timestamp, ArrayList<String> decisions) {
+        this.request = request;
         this.requester = requester;
         this.responder = responder;
         this.timestamp = timestamp;
