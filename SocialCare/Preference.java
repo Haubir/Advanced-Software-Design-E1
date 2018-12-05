@@ -28,4 +28,20 @@ public class Preference {
     public long getTime() {
 	    return this.time;
     }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public void setDuration(int duration) {
+        this.duration = duration;
+    }
+
+    public void setTime(long time) {
+        this.time = time;
+    }
 }
