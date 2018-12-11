@@ -5,4 +5,7 @@ package SocialCare;
  */
 public interface TrackingObject {
 
+    String getStatus();
+
+    Boolean validStatus(String status);
 }

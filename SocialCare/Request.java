@@ -1,16 +1,21 @@
 package SocialCare;
 
 
-public class Request extends Constraints implements TrackingObject{
+public class Request implements Constraints, TrackingObject{
 	private int ID;
-	private String status; 
+	private String status;
+    private String time;
+    private int numberOfResponders;
 
-    public Request() {
-
+    public Request(int ID, String status, String time, int numberOfResponders) {
+        this.ID = ID;
+        this.status = status;
+        this.time = time;
+        this.numberOfResponders = numberOfResponders;
     }
 
     public String getStatus() {
-        return status;
+        return this.status;
     }
 
     public void setStatus(String status) {
@@ -18,7 +23,7 @@ public class Request extends Constraints implements TrackingObject{
         else System.out.println("Request.setStatus(): Wrong status input....");
     }
 
-    private Boolean validStatus(String status) {
+    public Boolean validStatus(String status) {
         Boolean ret = false;
 
         if (status.toLowerCase().equals("scheduled")    ||

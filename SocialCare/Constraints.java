@@ -1,14 +1,12 @@
 package SocialCare;
 
-public abstract class Constraints {
-    protected String time;
-    protected int numberOfResponders;
+public interface Constraints {
 
-    abstract String getTime();
+    String getTime();
 
-    abstract int getNumberOfResponders();
+    int getNumberOfResponders();
 
-    abstract void setTime(String time);
+    void setTime(String time);
 
-    abstract void setNumberOfResponders(int numberOfResponders);
+    void setNumberOfResponders(int numberOfResponders);
 }

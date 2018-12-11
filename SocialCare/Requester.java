@@ -1,10 +1,15 @@
 package SocialCare;
 
 
-public class Requester extends Person {
+public class Requester implements Person {
+    private String name;
+    private String email;
+    private String phoneNumber;
+    private String paymentInfo;
+    private int starRating; // average
+    private int ID;
 
-
-    public Requester() {
+    public Requester(String name, String email, String phoneNumber, int ID) {
 
     }
 
@@ -12,44 +17,51 @@ public class Requester extends Person {
 	paymentSystem.makePayment(this);
     }
 
-    @Override
     public String getName() {
         return this.name;
     }
 
-    @Override
     public void setName(String name) {
         this.name = name;
     }
 
-    @Override
     public String getEmail() {
         return this.email;
     }
 
-    @Override
     public void setEmail(String email) {
         this.email = email;
     }
 
-    @Override
     public String getPhoneNumber() {
         return this.phoneNumber;
     }
 
-    @Override
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 
-    @Override
+    public int getStarRating() {
+        return starRating;
+    }
+
+    public void setStarRating(int starRating) {
+        this.starRating = starRating;
+    }
+
     public void giveFeedback(Responder responder) {
 
     }
 
-    // Not used in this class.
+
     @Override
-    public void giveFeedback(Request request) {
+    public void giveFeedback(int ID) {
 
     }
+
+    @Override
+    public String fetchPaymentInfo() {
+        return null;
+    }
+
 }

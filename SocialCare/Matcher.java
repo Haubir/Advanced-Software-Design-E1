@@ -1,6 +1,7 @@
 package SocialCare;
 
 public class Matcher implements TrackingObject {
+    private String status;
 
     public void performMatch() {
 
@@ -23,4 +24,13 @@ public class Matcher implements TrackingObject {
     }
 
 
+    @Override
+    public String getStatus() {
+        return this.status;
+    }
+
+    @Override
+    public Boolean validStatus(String status) {
+        return null;
+    }
 }

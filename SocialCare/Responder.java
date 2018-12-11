@@ -1,16 +1,15 @@
 package SocialCare;
 
-public class Responder extends Person {
+public class Responder implements Person {
+    private String name;
+    private String email;
+    private String phoneNumber;
+    private String paymentInfo;
     private String skills;
+    private int starRating; // average
+    private int ID;
 
-    public Responder() {
-    }
-
-    public Responder(String name, String email, String phoneNumber) {
-
-        this.name = name;
-        this.email = email;
-        this.phoneNumber = phoneNumber;
+    public Responder(String name, String email, String phoneNumber, String skills, int ID) {
     }
 
     public String getSkills() {
@@ -21,44 +20,53 @@ public class Responder extends Person {
         this.skills = skills;
     }
 
-    @Override
     public String getName() {
         return null;
     }
 
-    @Override
     public void setName(String name) {
 
     }
 
-    @Override
     public String getEmail() {
         return null;
     }
 
-    @Override
     public void setEmail(String email) {
 
     }
 
-    @Override
     public String getPhoneNumber() {
         return null;
     }
 
-    @Override
     public void setPhoneNumber(String phoneNumber) {
 
     }
 
-    // Not used in this class.
+    public int getStarRating() {
+        return starRating;
+    }
+
+    public void setStarRating(int starRating) {
+        this.starRating = starRating;
+    }
+
+    public int getID() {
+        return ID;
+    }
+
+    public void setID(int ID) {
+        this.ID = ID;
+    }
+
     @Override
-    public void giveFeedback(Responder responder) {
+    public void giveFeedback(int ID) {
 
     }
 
     @Override
-    public void giveFeedback(Request request) {
-
+    public String fetchPaymentInfo() {
+        return null;
     }
 }

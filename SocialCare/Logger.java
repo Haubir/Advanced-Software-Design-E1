@@ -9,10 +9,6 @@ public class Logger {
     private String timestamp;
     private ArrayList<String> decisions; // String type should probably be changed to a more suitable type
 
-    public Logger() {
-
-    }
-
     public Logger(Request request, Requester requester, Responder responder, String timestamp, ArrayList<String> decisions) {
         this.request = request;
         this.requester = requester;

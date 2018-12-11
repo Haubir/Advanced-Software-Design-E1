@@ -4,24 +4,23 @@ public class Tracker {
     private TrackingObject trackingObject; // Could be either Request or Matcher
 
 
-    public Tracker() {
-
+    public Tracker(TrackingObject trackingObject) {
+        this.trackingObject = trackingObject;
     }
-    
-   
+
+    public TrackingObject getTrackingObject() {
+        return trackingObject;
+    }
+
+    public void setTrackingObject(TrackingObject trackingObject) {
+        this.trackingObject = trackingObject;
+    }
+
     public void trackRequests() {
 
     }
 
-    public void sendRequest() {
-
-    }
-
     public void trackMatcher() {
-
-    }
-
-    public void sendMatcher() {
 
     }
 

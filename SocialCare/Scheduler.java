@@ -6,7 +6,7 @@ public class Scheduler {
 	private HashMap<Integer,Request> queue;
 
     public Scheduler() {
-
+        this.queue = new HashMap<Integer, Request>();
     }
 
     public void scheduleRequest(Request request, String timeToPost) {
@@ -14,16 +14,10 @@ public class Scheduler {
     }
 
     public void post() {
-        // 1. Fetch the Request
-        Request toPost = this.queue.get(0); // TODO: This line should always return the first Request in the HashMap.
-        // 2. Send to the matcher
-        // TODO
-        // 3. Change status to "Pending"
-        toPost.setStatus("Posted");
+
     }
 
     public Request getRequest(int ID) {
-    	// TODO: First check if the ID exists in the queue.
     	return this.queue.get(ID);
     }
 
