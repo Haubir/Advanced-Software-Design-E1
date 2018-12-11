@@ -2,7 +2,7 @@ package SocialCare;
 
 public abstract class Constraints {
     protected String time;
-    protected int numberOfResponders; // What type should this be? Replace T with the desired type.
+    protected int numberOfResponders;
 
     abstract String getTime();
 

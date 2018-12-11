@@ -9,14 +9,6 @@ public class Request extends Constraints implements TrackingObject{
 
     }
 
-    public String getRequest() { // Replace String with the desired type.
-        return "";
-    }
-
-    public void setRequest() {
-
-    }
-
     public String getStatus() {
         return status;
     }
