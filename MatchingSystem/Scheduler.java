@@ -26,6 +26,8 @@ import MatchingSystem.API.SchedulerAPI;
  */
 public class Scheduler extends SchedulerAPI {
 
+    public Scheduler() {}
+
     public static void getInstance() {
 
     }

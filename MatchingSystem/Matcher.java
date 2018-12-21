@@ -12,6 +12,8 @@
 
 package MatchingSystem;
 
+enum PaymentSystem {HOURLY, PERJOB}
+
 /**
  * Class summary.
  * <p>
@@ -23,6 +25,9 @@ package MatchingSystem;
  * @since JDK 1.8
  */
 public class Matcher {
+
+
+
 
     public void performMatch(Request request) {
 
