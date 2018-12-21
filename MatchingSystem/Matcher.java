@@ -26,8 +26,7 @@ enum PaymentSystem {HOURLY, PERJOB}
  */
 public class Matcher {
 
-
-
+    public Matcher() {}
 
     public void performMatch(Request request) {
 
