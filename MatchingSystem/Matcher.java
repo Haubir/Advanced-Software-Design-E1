@@ -28,8 +28,19 @@ public class Matcher {
 
     public Matcher() {}
 
+    public Boolean findResponder(Request request) {return false;}
+
     public void performMatch(Request request) {
 
     }
 
+    public void matchNotification(Requester requester, Responder responder) {
+
+    }
+
+    public void log(String [] currentState) {
+
+    }
+
+    public Feedback getFeedback(Requester requester, Responder responder, Request request) {return null;}
 }

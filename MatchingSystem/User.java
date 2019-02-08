@@ -12,8 +12,6 @@
 
 package MatchingSystem;
 
-import MatchingSystem.API.UserAPI;
-
 /**
  * Class summary.
  * <p>
@@ -24,55 +22,26 @@ import MatchingSystem.API.UserAPI;
  * @version JDK 1.8
  * @since JDK 1.8
  */
-public class User<T> extends UserAPI {
-    private T userObject; // Could be either Requester or Responder
-
-    public User(T userObject) {
-        this.userObject = userObject;
-    }
-
-    public void createAccount() {
-
-    }
-
-    public void deleteAccount() {
-
-    }
-
-    public void login() {
-
-    }
-
-    public void logout() {
-
-    }
-
-    public void giveFeedback() {
-
-    }
-
-    public void reportAbuse() {
-
-    }
-
-    public void setConstraints() {
-
-    }
-
-    public void setPreferences() {
-
-    }
-
-    public void membershipType() {
-
-    }
+public interface User {
 
 
-    public void gatherUserInfo() {
+    public void createAccount();
 
-    }
+    public void deleteAccount();
 
-    public void sendUserInfo() {
+    public void login();
 
-    }
+    public void logout();
+
+    public void giveFeedback();
+
+    public void reportAbuse();
+
+    public void setConstraints();
+
+    public void setPreferences();
+
+    public void membershipType();
+
+    public void log(String [] currentState);
 }

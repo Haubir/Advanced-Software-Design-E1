@@ -27,7 +27,7 @@ public class Tracker {
 
     public Tracker(Request request) {
         this.request = request;
-        track();
+        track(this.request);
     }
 
     public Request getRequest() {
@@ -38,5 +38,5 @@ public class Tracker {
         this.request = request;
     }
 
-    public void track() {}
+    private void track(Request request) {}
 }

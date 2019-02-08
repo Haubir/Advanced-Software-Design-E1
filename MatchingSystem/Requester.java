@@ -22,7 +22,7 @@ package MatchingSystem;
  * @version JDK 1.8
  * @since JDK 1.8
  */
-public abstract class Requester {
+public class Requester implements User {
     private String name;
     private String email;
     private String phoneNumber;
@@ -65,5 +65,61 @@ public abstract class Requester {
 
     public void setStarRating(String starRating) {
         this.starRating = starRating;
+    }
+
+    public Request createRequest() {return null;}
+
+    public void sendRequest() {}
+
+    public void modifyRequest(Request request) {}
+
+    @Override
+    public void createAccount() {
+
+    }
+
+    @Override
+    public void deleteAccount() {
+
+    }
+
+    @Override
+    public void login() {
+
+    }
+
+    @Override
+    public void logout() {
+
+    }
+
+    @Override
+    public void giveFeedback() {
+
+    }
+
+    @Override
+    public void reportAbuse() {
+
+    }
+
+    @Override
+    public void setConstraints() {
+
+    }
+
+    @Override
+    public void setPreferences() {
+
+    }
+
+    @Override
+    public void membershipType() {
+
+    }
+
+    @Override
+    public void log(String[] currentState) {
+
     }
 }

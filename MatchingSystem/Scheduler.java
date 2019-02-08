@@ -12,8 +12,6 @@
 
 package MatchingSystem;
 
-import MatchingSystem.API.SchedulerAPI;
-
 /**
  * Class summary.
  * <p>
@@ -24,25 +22,10 @@ import MatchingSystem.API.SchedulerAPI;
  * @version JDK 1.8
  * @since JDK 1.8
  */
-public class Scheduler extends SchedulerAPI {
+public class Scheduler{
 
     public Scheduler() {}
 
-    public static void getInstance() {
+    public static void post(Request request) {}
 
-    }
-
-    public static void createMatchJob(Request request) {
-
-    }
-
-    @Override
-    public void gatherRequestInfo(Request request) {
-
-    }
-
-    @Override
-    public void sendRequestInfo(Request request) {
-
-    }
 }

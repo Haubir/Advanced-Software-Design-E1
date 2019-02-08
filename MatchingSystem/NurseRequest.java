@@ -12,6 +12,8 @@
 
 package MatchingSystem;
 
+import java.util.ArrayList;
+
 /**
  * Class summary.
  * <p>
@@ -37,12 +39,18 @@ public class NurseRequest extends Constraints implements Request {
     }
 
     @Override
-    public void setTime() {
+    public void setTime(String time) {
 
     }
 
     @Override
-    public void setNoOfResponders() {
+    public void setNoOfResponders(int noOfResponders) {
 
+    }
+
+
+    @Override
+    public ArrayList<String> requestInfo() {
+        return null;
     }
 }

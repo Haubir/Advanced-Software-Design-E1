@@ -22,7 +22,7 @@ package MatchingSystem;
  * @version JDK 1.8
  * @since JDK 1.8
  */
-public abstract class Responder {
+public class Responder implements User{
     private String name;
     private String email;
     private String phoneNumber;
@@ -75,5 +75,57 @@ public abstract class Responder {
 
     public void setSkills(String skills) {
         this.skills = skills;
+    }
+
+    public Boolean respondToRequest(Request request) {return false;}
+
+    @Override
+    public void createAccount() {
+
+    }
+
+    @Override
+    public void deleteAccount() {
+
+    }
+
+    @Override
+    public void login() {
+
+    }
+
+    @Override
+    public void logout() {
+
+    }
+
+    @Override
+    public void giveFeedback() {
+
+    }
+
+    @Override
+    public void reportAbuse() {
+
+    }
+
+    @Override
+    public void setConstraints() {
+
+    }
+
+    @Override
+    public void setPreferences() {
+
+    }
+
+    @Override
+    public void membershipType() {
+
+    }
+
+    @Override
+    public void log(String[] currentState) {
+
     }
 }

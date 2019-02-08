@@ -24,10 +24,6 @@ package MatchingSystem;
  */
 public class Logger {
 
-    public static void getInstance() {
-
-    }
-
     public static void log() {
 
     }

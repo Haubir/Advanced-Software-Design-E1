@@ -11,7 +11,7 @@ public abstract class Constraints {
 
     public abstract int getNoOfResponders();
 
-    public abstract void setTime();
+    public abstract void setTime(String time);
 
-    public abstract void setNoOfResponders();
+    public abstract void setNoOfResponders(int noOfResponders);
 }

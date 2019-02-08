@@ -1,7 +1,7 @@
-PROGRAMFILES = *.java API/*.java
+PROGRAMFILES = *.java
 
 all: $(PROGRAMFILES)
 	@javac -Xlint $(PROGRAMFILES)
 
 clean:
-	@rm -f *.class API/*.class
+	@rm -f *.class

@@ -12,8 +12,6 @@
 
 package MatchingSystem;
 
-import MatchingSystem.API.NotificationAPI;
-
 /**
  * Class summary.
  * <p>
@@ -24,33 +22,22 @@ import MatchingSystem.API.NotificationAPI;
  * @version JDK 1.8
  * @since JDK 1.8
  */
-public class Notifier extends NotificationAPI {
-
-    public void getInstance() {
-
-    }
+public class Notifier {
 
     public void setObserver() {
 
     }
 
-    public void removeObserver() {
+    public void removeTracker() {
 
     }
 
-    public void sendNotification() {
+    public static void sendNotification(Object... recipients) {
 
     }
 
     public void askForResponse() {
 
     }
-
-    public void gatherNotificationInfo() {
-
-    }
-
-    public void Notify() {
-
-    }
+    
 }
